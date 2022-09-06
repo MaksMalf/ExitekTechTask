@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		8DA34D7928C67609003ADAD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA34D7828C67609003ADAD2 /* AppDelegate.swift */; };
 		8DA34D7B28C67609003ADAD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA34D7A28C67609003ADAD2 /* SceneDelegate.swift */; };
-		8DA34D7D28C67609003ADAD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA34D7C28C67609003ADAD2 /* ViewController.swift */; };
-		8DA34D8028C67609003ADAD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA34D7E28C67609003ADAD2 /* Main.storyboard */; };
+		8DA34D7D28C67609003ADAD2 /* MobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA34D7C28C67609003ADAD2 /* MobileViewController.swift */; };
 		8DA34D8328C67609003ADAD2 /* ExitekTechTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DA34D8128C67609003ADAD2 /* ExitekTechTask.xcdatamodeld */; };
 		8DA34D8528C6760A003ADAD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA34D8428C6760A003ADAD2 /* Assets.xcassets */; };
 		8DA34D8828C6760A003ADAD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA34D8628C6760A003ADAD2 /* LaunchScreen.storyboard */; };
+		8DA34D9528C68426003ADAD2 /* MobileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA34D9428C68426003ADAD2 /* MobileModel.swift */; };
+		8DA34D9828C68551003ADAD2 /* MobileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA34D9728C68551003ADAD2 /* MobileDataService.swift */; };
+		8DA34D9A28C68597003ADAD2 /* MobileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA34D9928C68597003ADAD2 /* MobileView.swift */; };
+		8DA34D9F28C68CDA003ADAD2 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA34D9E28C68CDA003ADAD2 /* UIViewController+Ext.swift */; };
+		A38C4D25706D0FCA964327E0 /* Pods_ExitekTechTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A7F140600318B433BFD3A7 /* Pods_ExitekTechTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55193C978038D0660D15B650 /* Pods-ExitekTechTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExitekTechTask.release.xcconfig"; path = "Target Support Files/Pods-ExitekTechTask/Pods-ExitekTechTask.release.xcconfig"; sourceTree = "<group>"; };
+		58A7F140600318B433BFD3A7 /* Pods_ExitekTechTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExitekTechTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A83A21C5A5EDF4517E49716 /* Pods-ExitekTechTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExitekTechTask.debug.xcconfig"; path = "Target Support Files/Pods-ExitekTechTask/Pods-ExitekTechTask.debug.xcconfig"; sourceTree = "<group>"; };
 		8DA34D7528C67609003ADAD2 /* ExitekTechTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExitekTechTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA34D7828C67609003ADAD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA34D7A28C67609003ADAD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DA34D7C28C67609003ADAD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8DA34D7F28C67609003ADAD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DA34D7C28C67609003ADAD2 /* MobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileViewController.swift; sourceTree = "<group>"; };
 		8DA34D8228C67609003ADAD2 /* ExitekTechTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExitekTechTask.xcdatamodel; sourceTree = "<group>"; };
 		8DA34D8428C6760A003ADAD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DA34D8728C6760A003ADAD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DA34D8928C6760A003ADAD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DA34D9428C68426003ADAD2 /* MobileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileModel.swift; sourceTree = "<group>"; };
+		8DA34D9728C68551003ADAD2 /* MobileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataService.swift; sourceTree = "<group>"; };
+		8DA34D9928C68597003ADAD2 /* MobileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileView.swift; sourceTree = "<group>"; };
+		8DA34D9E28C68CDA003ADAD2 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A38C4D25706D0FCA964327E0 /* Pods_ExitekTechTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D6782DCF9F77B42C32B8C46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A83A21C5A5EDF4517E49716 /* Pods-ExitekTechTask.debug.xcconfig */,
+				55193C978038D0660D15B650 /* Pods-ExitekTechTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8DA34D6C28C67609003ADAD2 = {
 			isa = PBXGroup;
 			children = (
 				8DA34D7728C67609003ADAD2 /* ExitekTechTask */,
 				8DA34D7628C67609003ADAD2 /* Products */,
+				8D6782DCF9F77B42C32B8C46 /* Pods */,
+				A311F571BAEFD1F5C5A71535 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +80,83 @@
 		8DA34D7728C67609003ADAD2 /* ExitekTechTask */ = {
 			isa = PBXGroup;
 			children = (
+				8DA34D9D28C68CAD003ADAD2 /* Extensions */,
+				8DA34D9628C68522003ADAD2 /* Services */,
+				8DA34D9228C683AE003ADAD2 /* App */,
+				8DA34D9128C683A5003ADAD2 /* View */,
+				8DA34DA028C68F26003ADAD2 /* Controller */,
+				8DA34D8F28C68394003ADAD2 /* Model */,
+				8DA34D9328C683B3003ADAD2 /* Resources */,
+			);
+			path = ExitekTechTask;
+			sourceTree = "<group>";
+		};
+		8DA34D8F28C68394003ADAD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DA34D9428C68426003ADAD2 /* MobileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DA34D9128C683A5003ADAD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DA34D9928C68597003ADAD2 /* MobileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DA34D9228C683AE003ADAD2 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				8DA34D7828C67609003ADAD2 /* AppDelegate.swift */,
 				8DA34D7A28C67609003ADAD2 /* SceneDelegate.swift */,
-				8DA34D7C28C67609003ADAD2 /* ViewController.swift */,
-				8DA34D7E28C67609003ADAD2 /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8DA34D9328C683B3003ADAD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				8DA34D8428C6760A003ADAD2 /* Assets.xcassets */,
 				8DA34D8628C6760A003ADAD2 /* LaunchScreen.storyboard */,
 				8DA34D8928C6760A003ADAD2 /* Info.plist */,
 				8DA34D8128C67609003ADAD2 /* ExitekTechTask.xcdatamodeld */,
 			);
-			path = ExitekTechTask;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8DA34D9628C68522003ADAD2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8DA34D9728C68551003ADAD2 /* MobileDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8DA34D9D28C68CAD003ADAD2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8DA34D9E28C68CDA003ADAD2 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8DA34DA028C68F26003ADAD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DA34D7C28C67609003ADAD2 /* MobileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A311F571BAEFD1F5C5A71535 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58A7F140600318B433BFD3A7 /* Pods_ExitekTechTask.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DA34D8C28C6760A003ADAD2 /* Build configuration list for PBXNativeTarget "ExitekTechTask" */;
 			buildPhases = (
+				700A40B3974D96E25EA06A52 /* [CP] Check Pods Manifest.lock */,
 				8DA34D7128C67609003ADAD2 /* Sources */,
 				8DA34D7228C67609003ADAD2 /* Frameworks */,
 				8DA34D7328C67609003ADAD2 /* Resources */,
+				82E7B354273E65A08C8FD8C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +221,52 @@
 			files = (
 				8DA34D8828C6760A003ADAD2 /* LaunchScreen.storyboard in Resources */,
 				8DA34D8528C6760A003ADAD2 /* Assets.xcassets in Resources */,
-				8DA34D8028C67609003ADAD2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		700A40B3974D96E25EA06A52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExitekTechTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82E7B354273E65A08C8FD8C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExitekTechTask/Pods-ExitekTechTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExitekTechTask/Pods-ExitekTechTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExitekTechTask/Pods-ExitekTechTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8DA34D7128C67609003ADAD2 /* Sources */ = {
@@ -142,23 +274,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DA34D8328C67609003ADAD2 /* ExitekTechTask.xcdatamodeld in Sources */,
-				8DA34D7D28C67609003ADAD2 /* ViewController.swift in Sources */,
+				8DA34D9A28C68597003ADAD2 /* MobileView.swift in Sources */,
+				8DA34D7D28C67609003ADAD2 /* MobileViewController.swift in Sources */,
+				8DA34D9528C68426003ADAD2 /* MobileModel.swift in Sources */,
+				8DA34D9828C68551003ADAD2 /* MobileDataService.swift in Sources */,
 				8DA34D7928C67609003ADAD2 /* AppDelegate.swift in Sources */,
 				8DA34D7B28C67609003ADAD2 /* SceneDelegate.swift in Sources */,
+				8DA34D9F28C68CDA003ADAD2 /* UIViewController+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8DA34D7E28C67609003ADAD2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8DA34D7F28C67609003ADAD2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8DA34D8628C6760A003ADAD2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +414,7 @@
 		};
 		8DA34D8D28C6760A003ADAD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A83A21C5A5EDF4517E49716 /* Pods-ExitekTechTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,10 +422,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6S5M6D9C92;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExitekTechTask/Info.plist;
+				INFOPLIST_FILE = ExitekTechTask/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -314,6 +442,7 @@
 		};
 		8DA34D8E28C6760A003ADAD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55193C978038D0660D15B650 /* Pods-ExitekTechTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,10 +450,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6S5M6D9C92;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExitekTechTask/Info.plist;
+				INFOPLIST_FILE = ExitekTechTask/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
