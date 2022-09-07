@@ -29,17 +29,36 @@ class MobileDataService: MobileStorage {
     // MARK: - Functions
 
     func save(_ mobile: Mobile) throws -> Mobile {
+        let request = MobileEntity.fetchRequest() as NSFetchRequest<MobileEntity>
+        request.predicate = NSPredicate(format: "imei == %@", mobile.imei)
+
+        do {
+            let mobilesEntity = try context.fetch(request)
+            print(mobilesEntity.count)
+            if mobilesEntity.count > 0 {
+                throw SavingErrors.duplicate
+            }
+        } catch {
+            throw error
+        }
+
+        if mobile.imei.count != 15 {
+            throw SavingErrors.nonCorrectData
+        }
+
         let newMobileEntity = MobileEntity(context: context)
         newMobileEntity.imei = mobile.imei
         newMobileEntity.model = mobile.model
+
         do {
             try context.save()
             return mobile
         } catch {
-            throw error
+            let nserror = error as NSError
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
         }
     }
-//
+
     func getAll() -> Set<Mobile> {
         do {
             var mobiles: [Mobile] = []
@@ -51,22 +70,35 @@ class MobileDataService: MobileStorage {
             }
             return Set(mobiles)
         } catch {
-            return Set<Mobile>()
-        }
+            let nserror = error as NSError
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")        }
     }
-//
+
     func delete(_ product: Mobile) throws {
         let request = MobileEntity.fetchRequest() as NSFetchRequest<MobileEntity>
         let mobilesEntity = try context.fetch(request)
+        if mobilesEntity.count == 0 {
+            throw DeletionErrors.dataBaseIsEmpty
+        }
+        var deleteEntity: MobileEntity?
         mobilesEntity.forEach { entity in
             if entity.imei == product.imei {
-                context.delete(entity)
+                deleteEntity = entity
             }
         }
+
+        if let deleteEntity = deleteEntity {
+            context.delete(deleteEntity)
+        } else {
+            throw DeletionErrors.mobileNotFound
+        }
+
         do {
             try context.save()
         } catch {
-            throw error
+            let nserror = error as NSError
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+
         }
     }
 
@@ -102,6 +134,36 @@ extension MobileDataService {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
+        }
+    }
+}
+
+// MARK: - Possible errors
+
+enum SavingErrors: Error {
+    case duplicate
+    case nonCorrectData
+}
+
+enum DeletionErrors: Error {
+    case mobileNotFound
+    case dataBaseIsEmpty
+}
+
+extension SavingErrors: CustomStringConvertible {
+    var description: String {
+        switch self {
+        case .duplicate: return "Such a mobile is already in the database"
+        case .nonCorrectData: return "Incorrect data has been entered"
+        }
+    }
+}
+
+extension DeletionErrors: CustomStringConvertible {
+    var description: String {
+        switch self {
+        case .mobileNotFound: return "There is no mobile with such an IMEI in the database"
+        case .dataBaseIsEmpty: return "The database is empty"
         }
     }
 }

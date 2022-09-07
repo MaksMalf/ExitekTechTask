@@ -69,22 +69,20 @@ extension MobileViewController {
             return
         }
         let mobile = Mobile(imei: imei, model: model)
-        if mobiles.contains(mobile) {
-            showAlert(title: "Error", message: "Such a model already exists")
-            mobileView?.addModelTextField.text = ""
-            mobileView?.addModelTextField.resignFirstResponder()
-            mobileView?.addEmeiTextField.text = ""
-            mobileView?.addEmeiTextField.resignFirstResponder()
-            return
-        }
-        mobiles.append(mobile)
-        mobileView?.tableView.reloadData()
 
         do {
             try dataService.save(mobile)
-        } catch {
-
+            mobiles.append(mobile)
+            mobileView?.tableView.reloadData()
+        } catch let error as SavingErrors {
+            switch error {
+            case .duplicate: self.showAlert(title: "Error", message: "\(error.description)")
+            case .nonCorrectData: self.showAlert(title: "Error", message: "\(error.description)")
+            }
+        } catch let error as NSError {
+            fatalError("Unresolved error \(error), \(error.userInfo)")
         }
+
 
         mobileView?.addModelTextField.text = ""
         mobileView?.addModelTextField.resignFirstResponder()
@@ -171,8 +169,13 @@ extension MobileViewController: UITableViewDelegate {
             do {
                 mobiles.remove(at: indexPath.row)
                 try dataService.delete(mobile)
-            } catch {
-                return
+            } catch let error as DeletionErrors {
+                switch error {
+                case .mobileNotFound: self.showAlert(title: "Error", message: "\(error.description)")
+                case .dataBaseIsEmpty: self.showAlert(title: "Error", message: "\(error.description)")
+            }
+            } catch let error as NSError {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
             }
             
             tableView.deleteRows(at: [indexPath], with: .fade)
